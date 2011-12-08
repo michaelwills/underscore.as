@@ -377,7 +377,7 @@ public var _:* = (function():Function {
      * @throws ArgumentError if obj is not an Object or Array.
 	 */
 	_.isEmpty = function(obj:*):Boolean {
-		if (obj is Array) {
+		if (obj is Array || obj is String) {
 			return obj.length == 0;
 		} else if (obj is Object) {
 			var n:int = 0;
